@@ -49,7 +49,7 @@ namespace BuyableShotgun
                 Instance = this;
             }
             harmony.PatchAll();
-            ShotgunPriceConfig = Config.Bind("Prices", "ShotgunPrice", 700, "Credits needed to buy shotgun");
+            ShotgunPriceConfig = Config.Bind("Prices", "ShotgunPrice", 300, "Credits needed to buy shotgun");
             SceneManager.sceneLoaded += OnSceneLoaded;
             ShotgunClone = MakeNonScrap(ShotgunPrice);
             AddToShop();
